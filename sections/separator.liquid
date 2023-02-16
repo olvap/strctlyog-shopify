@@ -1,0 +1,25 @@
+<div style="height: 1em; background: {{section.settings.background_color}}">
+</div>
+
+{% schema %}
+{
+  "name": "separator",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Separator"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Separator"
+    }
+  ]
+}
+{% endschema %}

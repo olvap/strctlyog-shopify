@@ -14,12 +14,15 @@
 }
 
 .list-menu__item--active {
-  text-decoration: underline;
+  text-decoration: none;
   text-underline-offset: 0.3rem;
 }
 
 .list-menu__item--active:hover {
   text-decoration-thickness: 0.2rem;
+}
+.link.link--text.list-menu__item.list-menu__item--link:hover {
+  text-decoration: none;
 }
 
 .list-menu--disclosure.localization-selector {
