@@ -121,15 +121,10 @@ slideshow-component .slideshow.banner {
   border-bottom: none;
 }
 
-@media screen and (min-width: 750px) {
-  .slideshow__controls {
-    position: absolute;
-    bottom: 0px;
-    width:100%;
-  }
-}
-
 slideshow-component:not(.page-width) .slider-buttons {
+  position: absolute;
+  bottom: 0px;
+  width:100%;
   border-right: 0;
   border-left: 0;
   z-index: 2;
