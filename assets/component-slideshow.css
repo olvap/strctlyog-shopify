@@ -105,10 +105,6 @@ slideshow-component .slideshow.banner {
   }
 }
 
-.slideshow__controls {
-  border: 0.1rem solid rgba(var(--color-foreground), 0.08);
-}
-
 .slideshow__controls--top {
   order: 2;
   z-index: 1;
@@ -127,13 +123,16 @@ slideshow-component .slideshow.banner {
 
 @media screen and (min-width: 750px) {
   .slideshow__controls {
-    position: relative;
+    position: absolute;
+    bottom: 0px;
+    width:100%;
   }
 }
 
 slideshow-component:not(.page-width) .slider-buttons {
   border-right: 0;
   border-left: 0;
+  z-index: 2;
 }
 
 .slideshow__control-wrapper {
