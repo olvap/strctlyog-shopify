@@ -256,7 +256,7 @@ html.no-js .no-js-hidden {
 
 @media screen and (min-width: 750px) {
   .page-width {
-    padding: 0 5rem;
+    padding: 0 2rem;
   }
 
   .page-width--narrow {
@@ -638,7 +638,8 @@ h6:empty {
   text-underline-offset: 0.3rem;
   color: rgb(var(--color-link));
   background-color: transparent;
-  font-size: 1.4rem;
+  font-size: 2rem;
+  font-weight: bold;
   font-family: inherit;
 }
 
@@ -2281,7 +2282,7 @@ product-info .loading-overlay:not(.hidden) ~ *,
 .header {
   display: grid;
   grid-template-areas: 'left-icon heading icons';
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: auto auto 1fr;
   align-items: center;
 }
 
@@ -2296,7 +2297,7 @@ product-info .loading-overlay:not(.hidden) ~ *,
 
   .header--middle-left {
     grid-template-areas: 'heading navigation icons';
-    grid-template-columns: auto auto 1fr;
+    grid-template-columns: auto 1fr auto;
     column-gap: 2rem;
   }
 
@@ -2657,6 +2658,9 @@ details[open] > .header__submenu {
 
   .header--middle-left .header__inline-menu {
     margin-left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
   }
 }
 
@@ -2698,7 +2702,6 @@ details[open] > .header__menu-item .icon-caret {
 .header__active-menu-item {
   transition: text-decoration-thickness var(--duration-short) ease;
   color: rgb(var(--color-foreground));
-  text-decoration: underline;
   text-underline-offset: 0.3rem;
 }
 
